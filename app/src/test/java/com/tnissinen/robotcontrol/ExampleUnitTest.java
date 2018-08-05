@@ -15,6 +15,6 @@ public class ExampleUnitTest {
 
         boolean isConnected = BluetoothHandler.getInstance().isConnected();
 
-        assertEquals(false, isConnected);
+        assertEquals(false, isConnected); 
     }
 }
