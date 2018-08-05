@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="layoutMargin">12dp</dimen>
+    <dimen name="seekBarMinHeight">40dp</dimen>
+    <dimen name="servoTextSize">16sp</dimen>
+    <dimen name="serialTextSize">12sp</dimen>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/general" >
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="route_delay"
+            android:title="@string/route_delay"
+            android:dialogTitle="@string/route_delay"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="1" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Servo 1" >
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_name1"
+            android:title="@string/servo_name"
+            android:dialogTitle="@string/servo_name"
+            android:selectAllOnFocus="true"
+            android:defaultValue="@string/servo1"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_start1"
+            android:title="@string/rotation_start"
+            android:dialogTitle="@string/rotation_start"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="0"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_end1"
+            android:title="@string/rotation_end"
+            android:dialogTitle="@string/rotation_end"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="160"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Servo 2" >
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_name2"
+            android:title="@string/servo_name"
+            android:dialogTitle="@string/servo_name"
+            android:selectAllOnFocus="true"
+            android:defaultValue="@string/servo2"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_start2"
+            android:title="@string/rotation_start"
+            android:dialogTitle="@string/rotation_start"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="90"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_end2"
+            android:title="@string/rotation_end"
+            android:dialogTitle="@string/rotation_end"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="160"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Servo 3" >
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_name3"
+            android:title="@string/servo_name"
+            android:dialogTitle="@string/servo_name"
+            android:selectAllOnFocus="true"
+            android:defaultValue="@string/servo3"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_start3"
+            android:title="@string/rotation_start"
+            android:dialogTitle="@string/rotation_start"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="50"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_end3"
+            android:title="@string/rotation_end"
+            android:dialogTitle="@string/rotation_end"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="150"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Servo 4" >
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_name4"
+            android:title="@string/servo_name"
+            android:dialogTitle="@string/servo_name"
+            android:selectAllOnFocus="true"
+            android:defaultValue="@string/servo4"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_start4"
+            android:title="@string/rotation_start"
+            android:dialogTitle="@string/rotation_start"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="100"/>
+
+        <com.tnissinen.robotcontrol.EditSummaryPreference
+            android:key="servo_rotation_end4"
+            android:title="@string/rotation_end"
+            android:dialogTitle="@string/rotation_end"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:defaultValue="160"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

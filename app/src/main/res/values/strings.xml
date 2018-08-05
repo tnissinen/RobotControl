@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Robot Control</string>
+    <string name="action_settings">Settings</string>
+    <string name="route_delay">Route Delay</string>
+    <string name="action_devices">Devices</string>
+    <string name="action_editor">Route editor</string>
+    <string name="general">General</string>
+    <string name="servo1">Servo 1</string>
+    <string name="servo2">Servo 2</string>
+    <string name="servo3">Servo 3</string>
+    <string name="servo4">Servo 4</string>
+    <string name="m1">M1</string>
+    <string name="m2">M2</string>
+    <string name="m3">M3</string>
+    <string name="m4">M4</string>
+    <string name="m5">M5</string>
+    <string name="m6">M6</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="run">Run</string>
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+    <string name="r4">R4</string>
+    <string name="add">Add point</string>
+    <string name="servo_name">Servo name</string>
+    <string name="rotation_start">Rotation start</string>
+    <string name="rotation_end">Rotation end</string>
+    <string name="edit">Edit</string>
+
+    <string name="routes">Routes</string>
+    <string name="log">Log</string>
+    <string name="running_route">Running route</string>
+    <string name="route_ended">Route ended</string>
+    <string name="memory_slot_set">Memory slot %1$s set</string>
+    <string name="bluetooth_init_failed">Bluetooth initilization failed</string>
+    <string name="bluetooth_not_supported">Device doesnt support Bluetooth</string>
+    <string name="bluetooth_connect_failed">Couldnt establish Bluetooth connection</string>
+    <string name="no_bonded_devices">No bonded devices found</string>
+    <string name="connected">Connected</string>
+    <string name="connecting_to">Connecting to</string>
+    <string name="connection_to">Connection to</string>
+    <string name="failed">failed</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected_to">Connected to</string>
+    <string name="clear_log">Clear log</string>
+    <string name="msg_sending_failed">Message sending failed</string>
+
+</resources>

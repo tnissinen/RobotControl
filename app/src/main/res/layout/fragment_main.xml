@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layoutMargin"
+    android:paddingLeft="@dimen/layoutMargin"
+    android:paddingRight="@dimen/layoutMargin"
+    android:paddingTop="@dimen/layoutMargin"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/servo1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:text="@string/servo1"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo1SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_row="0" />
+
+        <TextView
+            android:id="@+id/servo2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:gravity="center_vertical"
+            android:text="@string/servo2"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo2SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center_vertical"
+            android:layout_row="1"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_row="1" />
+
+        <!-- row 3 -->
+
+        <TextView
+            android:id="@+id/servo3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:gravity="center_vertical"
+            android:text="@string/servo3"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo3SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_row="2" />
+
+        <!-- row 4 -->
+        <TextView
+            android:id="@+id/servo4TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_row="3"
+            android:gravity="center_vertical"
+            android:text="@string/servo4"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo4SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_columnWeight="10"
+            android:layout_gravity="center_vertical"
+            android:layout_row="3"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="right"
+            android:layout_row="3" />
+
+    </GridLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/servo1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/servo1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:text="@string/servo1"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo1SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/servo2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/servo2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/servo2"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo2SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/servo3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/servo3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/servo3"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo3SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/servo4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/servo4TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/servo4"
+            android:textSize="@dimen/servoTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/servo4SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:minHeight="@dimen/seekBarMinHeight"
+            android:progress="50" />
+
+        <com.tnissinen.robotcontrol.SimulationView
+            android:id="@+id/simuView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+    -->
+    <LinearLayout
+        android:id="@+id/memButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/memButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:allowUndo="true"
+            android:text="@string/m1" />
+
+        <Button
+            android:id="@+id/memButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/m2" />
+
+        <Button
+            android:id="@+id/memButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/m3" />
+
+        <Button
+            android:id="@+id/memButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/m4" />
+
+        <Button
+            android:id="@+id/memButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/m5" />
+
+        <Button
+            android:id="@+id/memButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/m6" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/layoutMargin" />
+
+</LinearLayout>
+
